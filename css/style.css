@@ -71,14 +71,18 @@ form{
 
 form input{
   flex: 1;
-  border:  none;
+  border-style:  solid;
+  border-color: #d3d3d3;
+  border-width: 1px;
   outline:  none;
+  letter-spacing: 1px;
   }
 
 form button{
   background: #0065FC;
   padding: 10px 50px;
   border: none;
+  border-radius: 0px 10px 10px 0px;
   outline: none;
   color: #fff;
   letter-spacing: 1px;
@@ -87,9 +91,10 @@ form button{
 
 form.fa-location-dot{
   align-self: center;
+  border-radius: 10px 0px 0px 10px;
   padding:  10px 20px;
   border: none;
-  background: gray;
+  background: #D3D3D3;
 }
 
 .section-title {
