@@ -129,7 +129,7 @@ input::placeholder {
   border-color: #d3d3d3;
   border-width: 1px;
   text-decoration: none;
-  padding: 10px 10px;
+  padding: 10px 20px;
 }
 
 .filter_links a:hover {
@@ -141,6 +141,23 @@ input::placeholder {
   border-color: #d3d3d3;
   border-width: 1px;
   text-decoration: none;
+  padding: 10px 20px;
+}
+
+.fa-money-bill-wave{
+  padding: 0px 10px 0px 0px;
+}
+
+.fa-person{
+  padding: 0px 10px 0px 0px;
+}
+
+.fa-heart{
+  padding: 0px 10px 0px 0px;
+}
+
+.fa-fire{
+  padding: 0px 10px 0px 0px;
 }
 
 .section-title {
