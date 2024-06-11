@@ -109,6 +109,40 @@ input::placeholder {
   cursor: pointer;
   }
 
+.filter{
+  Flex-direction: row;
+  justify-content: space-around;
+}
+
+.filter_links li {
+  font-weight: bold;
+  list-style: none;
+  display: inline-block;
+  margin:  5px 10px; 
+}
+
+.filter_links li a:link {
+  color: #000000;
+  font-weight: bold;
+  border-radius: 10px 10px 10px 10px;
+  border-style: solid;
+  border-color: #d3d3d3;
+  border-width: 1px;
+  text-decoration: none;
+  padding: 10px 10px;
+}
+
+.filter_links a:hover {
+  color: #0065FC;
+  font-weight: bold;
+  Background: #DEEBFF;
+  border-radius: 10px 10px 10px 10px;
+  border-style: solid;
+  border-color: #d3d3d3;
+  border-width: 1px;
+  text-decoration: none;
+}
+
 .section-title {
     margin: 0;
     font-size: 22px;
