@@ -138,10 +138,13 @@ input::placeholder {
     }
 }
 
-.filter{
-  display: flex;
+.filter {
   margin: 0em 0em 2em -3em;
+}
 
+.filter_links ul {
+  display: flex;
+  margin: 0em 0em 2em 0em;
 }
 
 .filter_links li {
@@ -160,7 +163,7 @@ input::placeholder {
   border-color: #d3d3d3;
   border-width: 1px;
   text-decoration: none;
-  padding: 10px 20px;
+  padding: 4px 4px 4px 4px;
  }
 
 .filter_links li a:hover {
@@ -173,7 +176,7 @@ input::placeholder {
   border-color: #d3d3d3;
   border-width: 1px;
   text-decoration: none;
-  padding: 10px 20px;
+  padding: 4px 4px 4px 4px;
 }
 
 .filter_links li a:visited {
@@ -185,7 +188,7 @@ input::placeholder {
   border-radius: 15px 15px 15px 15px;
   border-color: #d3d3d3;
   text-decoration: none;
-  padding: 10px 20px;
+  padding: 4px 4px 4px 4px;
  }
 
 .fa-money-bill-wave{
