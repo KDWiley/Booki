@@ -16,12 +16,12 @@
 body {
     display: flex;
     justify-content: center;
+    box-sizing: border-box;
 }
 
 .main-container {
     width: 100%;
     padding: 0 50px;
-    box-sizing: border-box;
 }
 
 header{
@@ -141,6 +141,7 @@ input::placeholder {
 .filter{
   display: flex;
   margin: 0em 0em 2em -3em;
+
 }
 
 .filter_links li {
