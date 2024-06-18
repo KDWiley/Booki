@@ -253,6 +253,45 @@ input::placeholder {
     width: 65%;
 }
 
+.accommodation-title {
+    display: flex;
+    align-items: center;
+}
+
+.accommodation-cards .card {
+    display: flex;
+    margin-top: 33px;
+}
+
+.accommodation-cards img {
+    width: 50%;
+    height: 200px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.accommodation-cards .card-content {
+    width: 25%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.accommodation-cards .card-title {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.accommodation-cards .card-subtitle {
+    margin: 0;
+}
+
+.accommodation-cards .card-rating {
+    margin-bottom: 5px;
+}
+
 /****** Popular ***********/
 .popular {
     width: 32%;
