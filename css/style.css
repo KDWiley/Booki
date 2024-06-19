@@ -307,17 +307,18 @@ input::placeholder {
 
 .popular-cards img {
     width: 33%;
-    height: 136px;
+    height: 200px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
 
 .popular-cards .card-content {
     width: 67%;
+    height: 175px;
     padding-left: 15px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     box-sizing: border-box;
 }
 
@@ -331,5 +332,5 @@ input::placeholder {
 }
 
 .popular-cards .card-rating {
-    margin-bottom: 5px;
+    margin-bottom: -20px;
 }
