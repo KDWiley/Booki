@@ -212,6 +212,17 @@ input::placeholder {
     font-size: 22px;
 }
 
+.card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.card-link {
+    text-decoration: none;
+}
+
 .card img {
     object-fit: cover;
 }
@@ -239,7 +250,7 @@ input::placeholder {
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
-    margin-bottom: 75px
+    margin-bottom: 75px;
 }
 
 /****** Accommodation ***********/
@@ -318,8 +329,9 @@ input::placeholder {
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
+    text-decoration: none;
 }
-
+    
 .popular-cards .card-title {
     margin-top: 10px;
     margin-bottom: 4px;
@@ -334,7 +346,6 @@ input::placeholder {
 }
 
 /******Activities***********/
-
 .activities {
     width: 100%;
 }
@@ -345,9 +356,11 @@ input::placeholder {
 }
 
 .activities-cards .card {
-    width: 20%;
+    width: 15%;
     margin-top: 33px;
-    margin-left: 50px;
+    margin-left: 80px;
+    margin-right: 60px;
+    margin-bottom:  66px;
     display: inline-block;
     background-color: white;
     border-radius: 20px;
@@ -376,8 +389,36 @@ input::placeholder {
     margin: 10px 10px 10px 0px;
 }
 
-/******Footer***********/
+/*******Footer***********/
 .footer{
     background-color: #F2F2F2;
-       
+    margin-left: 10px;
+    margin-right: 10px;
+    line-height: 2;
 }
+
+.footer-container{
+    max-width:  1170px;
+    margin-left: 10px;
+}
+ 
+.footer-row{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+} 
+
+ul{
+    list-style: none;
+}
+
+.footer_links li {
+    text-decoration: none;
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+
