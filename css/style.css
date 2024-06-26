@@ -419,21 +419,17 @@ input::placeholder {
 /*******Footer***********/
 .footer{
     background-color: #F2F2F2;
-    margin-left: 10px;
-    margin-right: 10px;
     line-height: 2;
 }
 
 .footer-container{
     max-width:  1170px;
-    margin-left: 10px;
 }
  
 .footer-row{
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    flex-wrap: wrap;;
 } 
 
 ul{
@@ -445,7 +441,6 @@ a:link{
 }
 
 .footer-col{
-    width: 25%;
-    padding: 0 15px;
+    margin: 0px 100px 0px -75px;
 }
 
