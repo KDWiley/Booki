@@ -98,6 +98,10 @@ header{
   border-width: 1px;
   outline: None;
   letter-spacing: 1px;
+  color: #000000;
+  font-weight: bold;
+  font-size: small;
+  text-align: center;
   }
 
 input::placeholder {
@@ -237,6 +241,7 @@ input::placeholder {
 }
 
 /****** Card Information ***********/
+
 .card-link {
     text-decoration: none;
 }
@@ -257,7 +262,7 @@ input::placeholder {
     color: var(--main-bg-color)
 }
 
-/****** Accommodation And Popular Cards***********/
+/****** Accommodation And Popular Card Interaction***********/
 .accommodation-and-popular {
     display: flex;
     justify-content: space-between;
@@ -440,4 +445,3 @@ a:link{
 .footer-col{
     margin: 0px 100px 0px -75px;
 }
-
