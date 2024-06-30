@@ -1,4 +1,31 @@
-/****** General ***********/
+/*GLOBAL*/
+/*1. General */
+/*2. Nav Links */
+/*3. Search */
+/*4. Filter */
+/*5. General Cards */
+/*6. Accommodation And Popular Cards */
+/*7. Accommodation Cards */
+/*8. Popular Cards */
+/*9. Activities Cards */
+/*10. Footer */
+
+/*TABLET <=1024px */
+
+/*MOBILE <768px */
+/*1.2 Mobile General */
+/*2.2 Nav Links */
+/*3.2 Search */
+/*4.2 Filter */
+/*5.2 General Cards */
+/*6.2 Accommodation And Popular Cards */
+/*7.2 Accommodation Cards */
+/*8.2 Popular Cards */
+/*9.2 Activities Cards */
+/*10.2 Footer */
+
+
+/*1. General Start */
 * {
     font-family: 'Raleway', sans-serif;
 }
@@ -31,11 +58,12 @@ header{
 }
 
 .logo {  
-    width: 3%;
-    height: 3%
+    width: 5%;
 }
+/*1. General End */
 
-/****** Navigation Links ***********/
+
+/*2. Nav Links Start */
 .nav_links li {
     list-style: none;
     display: inline-block;
@@ -59,8 +87,9 @@ header{
     border-top: 3px solid;
     text-decoration: none;
 }
+/*2. Nav Links End */
 
-/****** Search ***********/
+/*3. Search Start */
 .search-title h3 {
   margin-top: 1em;
   margin-bottom: .5em;
@@ -123,11 +152,6 @@ input::placeholder {
   cursor: pointer;
 }
 
- @media only screen and (max-width: 767px) {
-.search-button{
-        display: none;
-    }
-}
 .fa-magnifying-glass{
   background: #0065FC;
   border: none;
@@ -137,14 +161,9 @@ input::placeholder {
   outline: None;
   padding: 15px 20px;
 }
+/*3. Search End */
 
- @media only screen and (min-width: 768px) {
-.fa-magnifying-glass{
-        display: none;
-    }
-}
-
-/****** Filters ***********/
+/*4. Filter Start */
 .filter {
   margin: 0em 0em 3em -3em;
 }
@@ -239,8 +258,16 @@ input::placeholder {
 .filter-info-message{
      font-weight: lighter;
 }
+/*4. Filter End */
 
-/****** Card Information ***********/
+/*5. General Cards Start */
+.card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    min-width: 165px
+}
 
 .card-link {
     text-decoration: none;
@@ -261,8 +288,9 @@ input::placeholder {
 .neutralStar {
     color: var(--main-bg-color)
 }
+/*5. General Cards End*/
 
-/****** Accommodation And Popular Card Interaction***********/
+/*6. Accommodation And Popular Cards Start*/
 .accommodation-and-popular {
     display: flex;
     justify-content: space-between;
@@ -275,8 +303,9 @@ input::placeholder {
     box-sizing: border-box;
     margin-bottom: 75px;
 }
+/*6. Accommodation And Popular Cards End*/
 
-/****** Accommodation Cards ***********/
+/*7. Accommodation Cards Start*/
 .accommodation {
     width: 65%;
 }
@@ -322,8 +351,9 @@ input::placeholder {
     margin: 40px 0px 0px 0px;
     padding-left: 30px
 }
+/*7. Accommodation Cards End*/
 
-/****** Popular Cards ***********/
+/*8. Popular Cards Start*/
 .popular {
     width: 32%;
 }
@@ -373,8 +403,9 @@ input::placeholder {
 .popular-cards .card-rating {
     margin-bottom: -20px;
 }
+/*8. Popular Cards End*/
 
-/******Activities Cards***********/
+/*9. Activities Cards Start*/
 .activities {
     width: 100%;
     padding-left: 45px
@@ -417,8 +448,9 @@ input::placeholder {
 .activities-cards .card-subtitle {
     margin: 10px 10px 10px 0px;
 }
+/*9. Activities Cards End*/
 
-/*******Footer***********/
+/*10. Footer Start*/
 .footer{
     background-color: #F2F2F2;
     line-height: 2;
@@ -445,3 +477,149 @@ a:link{
 .footer-col{
     margin: 0px 100px 0px -75px;
 }
+/*10. Footer End*/
+
+/*1.2 Mobile General Start <768px*/
+@media only screen and (max-width: 768px) {
+.main-container {
+    width: 100%;
+    padding: 0px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+header {  
+    display: block;
+   }
+}
+
+@media only screen and (max-width: 768px) {
+.logo {  
+    display: flex;
+    justify-content: center;
+    width: 10%;
+    margin: auto;    
+   }
+}
+/*1.2 Mobile General End */
+
+
+/*2.2 Mobile Nav Links Start <768px*/
+@media only screen and (max-width: 768px) {
+.nav_links li {
+    margin-left: 90px;    
+   }
+}
+
+@media only screen and (max-width: 768px) {
+.nav_links li a:link {
+    color: #000000;
+    text-decoration: none;
+    padding: 0px 10px;
+   }
+}
+
+@media only screen and (max-width: 768px) {
+.nav_links a:hover {
+    color: #0065FC;
+    border-top: none;
+    border-bottom: 3px solid;
+    text-decoration: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+.nav_links a:active {
+    color: #0065FC;
+    border-top: none;
+    border-bottom: 3px solid;
+    text-decoration: none;
+    }
+ }
+/*2.2 Mobile Nav Links End */
+
+/*3.2 Mobile Search Start <768px */
+@media only screen and (max-width: 768px) {
+form{
+    display: flex;
+    justify-content: center;
+    }   
+ }
+
+@media only screen and (max-width: 767px) {
+.search-button{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+.fa-magnifying-glass{
+        display: none;
+    }
+}
+/*3.2 Mobile Search End*/
+
+/*4.2 Mobile Filter Start <768px */
+@media only screen and (max-width: 767px) {
+.filter {
+  margin: 0em 0em 3em 3em;
+    }
+ }
+/*4.2 Mobile Filter End */
+
+/*5.2 Mobile General Cards Start */
+
+/*5.2 Mobile General Cards End*/
+
+/*6.2 Mobile Accommodation And Popular Cards Start*/
+@media only screen and (max-width: 767px) {
+.accommodation-and-popular {
+    width: 100%;
+    display: block;
+    }
+}
+/*6.2 Mobile Accommodation And Popular Cards End*/
+
+/*7.2 Mobile Accommodation Cards Start*/
+@media only screen and (max-width: 767px) {
+.accommodation {
+    width: 100%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+.accommodation-cards .card {
+    display: block;
+    }
+}
+/*7.2 Mobile Accommodation Cards End*/
+
+/*8.2 Mobile Popular Cards Start*/
+
+/*8.2 Mobile Popular Cards End*/
+
+/*9.2 Mobile Activities Cards Start*/
+@media only screen and (max-width: 767px) {
+.activities-cards .card {
+    display: block;
+    }
+}
+/*9.2 Activities Cards End*/
+
+/*10.2 Footer Start*/
+@media only screen and (max-width: 767px) {
+.footer-row{
+    display: block;
+    margin-left: 50px;
+    } 
+ }
+
+@media only screen and (max-width: 767px) {
+.footer{
+    background-color: #F2F2F2;
+    margin: 0px;
+    padding: 0px;
+    }
+}
+/*10.2 Footer End*/
+
