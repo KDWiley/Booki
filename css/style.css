@@ -479,21 +479,22 @@ a:link{
 }
 /*10. Footer End*/
 
+
 /*1.2 Mobile General Start <768px*/
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 320px) and (max-width: 768px) {
 .main-container {
     width: 100%;
     padding: 0px;
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 320px) and (max-width: 768px) {
 header {  
     display: block;
    }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 320px) and (max-width: 768px) {
 .logo {  
     display: flex;
     justify-content: center;
@@ -505,13 +506,13 @@ header {
 
 
 /*2.2 Mobile Nav Links Start <768px*/
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 320px) and (max-width: 768px) {
 .nav_links li {
     margin-left: 90px;    
    }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 320px) and (max-width: 768px) {
 .nav_links li a:link {
     color: #000000;
     text-decoration: none;
@@ -519,7 +520,7 @@ header {
    }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 320px) and (max-width: 768px) {
 .nav_links a:hover {
     color: #0065FC;
     border-top: none;
@@ -528,7 +529,7 @@ header {
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 320px) and (max-width: 768px) {
 .nav_links a:active {
     color: #0065FC;
     border-top: none;
@@ -539,7 +540,7 @@ header {
 /*2.2 Mobile Nav Links End */
 
 /*3.2 Mobile Search Start <768px */
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 320px) and (max-width: 768px) {
 form{
     display: flex;
     justify-content: center;
@@ -560,66 +561,106 @@ form{
 /*3.2 Mobile Search End*/
 
 /*4.2 Mobile Filter Start <768px */
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 320px) and (max-width: 768px) {
 .filter {
   margin: 0em 0em 3em 3em;
     }
  }
 /*4.2 Mobile Filter End */
 
-/*5.2 Mobile General Cards Start */
-
+/*5.2 Mobile General Cards Start <768px */
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+.card {
+  width: 100%;
+    }
+}
 /*5.2 Mobile General Cards End*/
 
 /*6.2 Mobile Accommodation And Popular Cards Start*/
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 320px) and (max-width: 768px) {
 .accommodation-and-popular {
-    width: 100%;
     display: block;
+    width: 100%;
     }
 }
 /*6.2 Mobile Accommodation And Popular Cards End*/
 
 /*7.2 Mobile Accommodation Cards Start*/
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 320px) and (max-width: 768px) {
 .accommodation {
     width: 100%;
     }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 320px) and (max-width: 768px)  {
 .accommodation-cards .card {
     display: block;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 25px;
+    width: 100%;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px)  {
+.accommodation-title {
+    margin-left: -25px;
+    margin-bottom: 25px;
     }
 }
 /*7.2 Mobile Accommodation Cards End*/
 
 /*8.2 Mobile Popular Cards Start*/
+@media only screen and (max-width: 767px) and (min-width: 320px) {
+.popular {
+    width: 100%;
+    }
+}
 
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+.popular-cards .card {
+    display: flex;
+    }
+}
 /*8.2 Mobile Popular Cards End*/
 
 /*9.2 Mobile Activities Cards Start*/
-@media only screen and (max-width: 767px) {
-.activities-cards .card {
-    display: block;
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+.activities {
+    width: 93%;
+    padding-left: 25px;
     }
 }
-/*9.2 Activities Cards End*/
 
-/*10.2 Footer Start*/
-@media only screen and (max-width: 767px) {
-.footer-row{
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+.activities-cards .card {
+    width: 100%;
+    margin-bottom: 10px;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+.activities-cards img {
+    height: 300px;
+    }
+}
+/*9.2 Mobile Activities Cards End*/
+
+/*10.2 Mobile Footer Start*/
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+.footer-row {
     display: block;
     margin-left: 50px;
     } 
  }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 320px) and (max-width: 768px) {
 .footer{
     background-color: #F2F2F2;
     margin: 0px;
     padding: 0px;
     }
 }
-/*10.2 Footer End*/
+
+/*10.2 Mobile Footer End*/
 
