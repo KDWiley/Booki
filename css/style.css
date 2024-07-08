@@ -11,22 +11,21 @@
 /*10. Footer */
 
 /*TABLET <=1024px */
-
-
-
-
+/*6.1 Tablet Accommodation And Popular Cards */
+/*7.1 Tablet Accommodation Cards */
+/*8.1 Tablet Popular Cards */
 
 /*MOBILE  >320px <768px  */
 /*1.2 Mobile General */
-/*2.2 Nav Links */
-/*3.2 Search */
-/*4.2 Filter */
-/*5.2 General Cards */
-/*6.2 Accommodation And Popular Cards */
-/*7.2 Accommodation Cards */
-/*8.2 Popular Cards */
-/*9.2 Activities Cards */
-/*10.2 Footer */
+/*2.2 Mobile Nav Links */
+/*3.2 Mobile Search */
+/*4.2 Mobile Filter */
+/*5.2 Mobile General Cards */
+/*6.2 Mobile Accommodation And Popular Cards */
+/*7.2 Mobile Accommodation Cards */
+/*8.2 Mobile Popular Cards */
+/*9.2 Mobile Activities Cards */
+/*10.2 Mobile Footer */
 
 /*1. General Start */
 * {
@@ -70,7 +69,7 @@ header {
 
 /*2. Nav Links Start */
 .nav_links ul {
-    list-style: none;
+  list-style: none;
 }
 
 .nav_links li {
@@ -483,206 +482,240 @@ a:link {
 }
 /*10. Footer End*/
 
- /*6.1 Tablet Accommodation And Popular Cards Start*/
+/*6.1 Tablet Accommodation And Popular Cards Start*/
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .accommodation-and-popular {
     display: block;
     width: 100%;
   }
+  /*6.1 Tablet Accommodation And Popular Cards End*/
 
-
-}
-
-/*1.2 Mobile General Start*/
-@media only screen and (min-width: 320px) and (max-width: 768px) {
-  .main-container {
-    width: 100%;
-    padding: 10px;
-    margin-right: 0;
-  }
-
-  .body {
-  margin: 0 auto;
-}
-
-  header {
-    display: block;
-  }
-
-  .logo {
-    width : 100px;
-    display : block;
-    margin : 0 auto;
-    padding-left: 50px;
- 
-  }
-
-  /*1.2 Mobile General End*/
-
-  /*2.2 Mobile Nav Links Start*/
-
-
-  /* This is a tester */
-  nav::after {
-    border-bottom: 3px solid #F2F2F2;
-    content:' ';
-    position: absolute;
-    left: 0;
-    right: 0;
-    width: 100%;
-    top: 4rem;
-    margin: 0 auto;  }
-    
-  .nav_links li {
-    list-style: none;
-    display: inline-block;
-  }
-  
-  .nav_links li a:link {
-    color: #000000;
-    border-bottom: 3px solid;
-    padding: 0;
-    margin: 0;
-  }
-
-  .nav_links a:hover {
-    color: #0065fc;
-    border-top: none;
-    border-bottom: 3px solid;
-  }
-
-  .nav_links a:active {
-    color: #0065fc;
-    border-top: none;
-    border-bottom: 3px solid;
-  }
-
-  /*2.2 Mobile Nav Links End*/
-
-  /*3.2 Mobile Search Start*/
-
-  form {
-    display: flex;
-    justify-content: center;
-  }
-
-  .fa-magnifying-glass {
-    background: #0065fc;
-    border: none;
-    border-radius: 0px 15px 15px 0px;
-    color: #f2f2f2;
-    font-size: 100%;
-    outline: None;
-    padding: 15px 20px;
-  }
-
-  .search-button {
-    display: none;
-  }
-
-  /*3.2 Mobile Search End*/
-
-  /*4.2 Mobile Filter Start*/
-
-  .filter {
-    margin-left: -40px;
-  }
-
-  .filter_title {
-    display: none;
-  }
-
-  .filter_links li {
-    font-weight: bold;
-    list-style: none;
-    margin: 10px 10px;
-    padding: 0px;
-  }
-
-  /*4.2 Mobile Filter End */
-
-  /*5.2 Mobile General Cards Start <768px */
-
-  .card {
-    width: 100%;
-  }
-
-  /*5.2 Mobile General Cards End*/
-
-  /*6.2 Mobile Accommodation And Popular Cards Start*/
-
-  .accommodation-and-popular {
-    flex-flow: column-reverse;
-    width: 100%;
-  }
-
-  /*6.2 Mobile Accommodation And Popular Cards End*/
-
-  /*7.2 Mobile Accommodation Cards Start*/
+  /*6.1 Tablet Accommodation Cards Start*/
 
   .accommodation {
     width: 100%;
   }
+  /*6.1 Tablet Accommodation Cards End*/
 
-  .accommodation-cards .card {
-    display: block;
-    margin-top: 0px;
-    margin-left: 0px;
-    margin-bottom: 25px;
-    width: 100%;
-  }
-
-  .accommodation-title {
-    margin-left: -25px;
-    margin-bottom: 25px;
-  }
-
-  .accommodation-footer {
-    margin-left: -25px;
-  }
-
-  /*7.2 Mobile Accommodation Cards End*/
-
-  /*8.2 Mobile Popular Cards Start*/
-
+  /*7.1 Tablet Popular Cards Start*/
   .popular {
     width: 100%;
   }
 
+  .popular-cards .card-content {
+    width: 65%;
+  }
+
   .popular-cards .card {
-    display: flex;
+    width: 250px;
   }
 
-  /*8.2 Mobile Popular Cards End*/
-
-  /*9.2 Mobile Activities Cards Start*/
-
-  .activities {
-    width: 93%;
-    padding-left: 8px;
+  .popular-cards img {
+    width: 35%;
   }
+  /*7.1 Tablet Popular Cards End*/
 
   .activities-cards .card {
-    width: 100%;
-    margin-bottom: 10px;
+    margin-left: -35px;
   }
 
   .activities-cards img {
-    height: 300px;
-  }
-  /*9.2 Mobile Activities Cards End*/
-
-  /*10.2 Mobile Footer Start*/
-
-  .footer-row {
-    display: block;
-    margin-left: 50px;
+    height: 150px;
   }
 
-  .footer {
-    background-color: #f2f2f2;
-    margin: 0px;
-    padding: 0px;
+  /*1.2 Mobile General Start*/
+  @media only screen and (min-width: 320px) and (max-width: 768px) {
+    .main-container {
+      width: 100%;
+      padding: 10px;
+      margin-right: 0;
+    }
+
+    .body {
+      margin: 0 auto;
+    }
+
+    header {
+      display: block;
+    }
+
+    .logo {
+      width: 100px;
+      display: block;
+      margin: 0 auto;
+      padding-left: 50px;
+    }
+
+    /*1.2 Mobile General End*/
+
+    /*2.2 Mobile Nav Links Start*/
+
+    /* This is a tester */
+    nav::after {
+      border-bottom: 3px solid #f2f2f2;
+      content: " ";
+      position: absolute;
+      left: 0;
+      right: 0;
+      width: 100%;
+      top: 4rem;
+      margin: 0 auto;
+    }
+
+    .nav_links li {
+      list-style: none;
+      display: inline-block;
+    }
+
+    .nav_links li a:link {
+      color: #000000;
+      border-bottom: 3px solid;
+      padding: 0;
+      margin: 0;
+    }
+
+    .nav_links a:hover {
+      color: #0065fc;
+      border-top: none;
+      border-bottom: 3px solid;
+    }
+
+    .nav_links a:active {
+      color: #0065fc;
+      border-top: none;
+      border-bottom: 3px solid;
+    }
+
+    /*2.2 Mobile Nav Links End*/
+
+    /*3.2 Mobile Search Start*/
+
+    form {
+      display: flex;
+      justify-content: center;
+    }
+
+    .fa-magnifying-glass {
+      background: #0065fc;
+      border: none;
+      border-radius: 0px 15px 15px 0px;
+      color: #f2f2f2;
+      font-size: 100%;
+      outline: None;
+      padding: 15px 20px;
+    }
+
+    .search-button {
+      display: none;
+    }
+
+    /*3.2 Mobile Search End*/
+
+    /*4.2 Mobile Filter Start*/
+
+    .filter {
+      margin-left: -40px;
+    }
+
+    .filter_title {
+      display: none;
+    }
+
+    .filter_links li {
+      font-weight: bold;
+      list-style: none;
+      margin: 10px 10px;
+      padding: 0px;
+    }
+
+    /*4.2 Mobile Filter End */
+
+    /*5.2 Mobile General Cards Start <768px */
+
+    .card {
+      width: 100%;
+    }
+
+    /*5.2 Mobile General Cards End*/
+
+    /*6.2 Mobile Accommodation And Popular Cards Start*/
+
+    .accommodation-and-popular {
+      flex-flow: column-reverse;
+      width: 100%;
+    }
+
+    /*6.2 Mobile Accommodation And Popular Cards End*/
+
+    /*7.2 Mobile Accommodation Cards Start*/
+
+    .accommodation {
+      width: 100%;
+    }
+
+    .accommodation-cards .card {
+      display: block;
+      margin-top: 0px;
+      margin-left: 0px;
+      margin-bottom: 25px;
+      width: 100%;
+    }
+
+    .accommodation-title {
+      margin-left: -25px;
+      margin-bottom: 25px;
+    }
+
+    .accommodation-footer {
+      margin-left: -25px;
+    }
+
+    /*7.2 Mobile Accommodation Cards End*/
+
+    /*8.2 Mobile Popular Cards Start*/
+
+    .popular {
+      width: 100%;
+    }
+
+    .popular-cards .card {
+      display: flex;
+    }
+
+    /*8.2 Mobile Popular Cards End*/
+
+    /*9.2 Mobile Activities Cards Start*/
+
+    .activities {
+      width: 93%;
+      padding-left: 8px;
+    }
+
+    .activities-cards .card {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .activities-cards img {
+      height: 200px;
+    }
+    /*9.2 Mobile Activities Cards End*/
+
+    /*10.2 Mobile Footer Start*/
+
+    .footer-row {
+      display: block;
+      margin-left: 50px;
+    }
+
+    .footer {
+      background-color: #f2f2f2;
+      line-height: 2;
+      width: 110%;
+      margin-left: -10px;
+      margin-bottom: -25px;
+      padding-bottom: 5px;
+    }
   }
 }
 /*10.2 Mobile Footer End*/
