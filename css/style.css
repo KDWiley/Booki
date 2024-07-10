@@ -84,12 +84,14 @@ header {
 .nav_links li a:hover {
   color: #0065fc;
   border-top: 3px solid;
+  padding-top: 27px;
   text-decoration: none;
 }
 
 .nav_links li a:active {
   color: #0065fc;
   border-top: 3px solid;
+    padding-top: 27px;
   text-decoration: none;
 }
 /*2. Nav Links End */
@@ -496,12 +498,14 @@ a:link {
     width: 100%;
   }
 
-  .popular-cards .card-content {
-    width: 65%;
+  .popular-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
   }
 
   .popular-cards .card {
-    width: 250px;
+    width: 200px;
   }
 
   /*7.1 Tablet Popular Cards End*/
@@ -581,7 +585,7 @@ a:link {
   form {
     display: flex;
     justify-content: center;
-    }
+  }
 
   .search-button {
     display: none;
