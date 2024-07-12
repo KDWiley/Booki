@@ -10,13 +10,13 @@
 /*9. Activities Cards */
 /*10. Footer */
 
-/*TABLET <=1024px */
+/*TABLET (min-width: 768px) and (max-width: 1024px) */
 /*6.1 Tablet Accommodation And Popular Cards */
 /*7.1 Tablet Accommodation Cards */
 /*8.1 Tablet Popular Cards */
 /*9.1 Tablet Activities Cards */
 
-/*MOBILE  >320px <768px  */
+/*MOBILE  (min-width: 320px) and (max-width: 767px)  */
 /*1.2 Mobile General */
 /*2.2 Mobile Nav Links */
 /*3.2 Mobile Search */
@@ -28,7 +28,7 @@
 /*9.2 Mobile Activities Cards */
 /*10.2 Mobile Footer */
 
-/*CUSTOM TabletDesktop <768*/
+/*CUSTOM TabletDesktop (min-width: 768px)*/
 /*3.3 Custom Search Icon */
 /*4.3 Custom Filter Title */
 
@@ -83,14 +83,7 @@ header {
 }
 
 .nav_links li a:hover {
-  color: #0065fc;
-  border-top: 3px solid;
-  padding-top: 27px;
-  text-decoration: none;
-}
-
-.nav_links li a:active {
-  color: #0065fc;
+  color: var(--main-color);
   border-top: 3px solid;
   padding-top: 27px;
   text-decoration: none;
@@ -119,8 +112,8 @@ header {
 
 .fa-location-dot {
   border-style: solid;
-  border-color: #f2f2f2;
-  background: #f2f2f2;
+  border-color: var(--main-bg-color);
+  background: var(--main-bg-color);
   color: #000000;
   font-size: 100%;
   border-radius: 15px 0px 0px 15px;
@@ -148,7 +141,7 @@ input::placeholder {
 }
 
 .search-button {
-  background: #0065fc;
+  background: var(--main-color);
   border: none;
   border-radius: 0px 15px 15px 0px;
   outline: None;
@@ -204,20 +197,7 @@ input::placeholder {
   color: #000000;
   font-weight: bold;
   font-size: small;
-  background: #deebff;
-  border-radius: 15px 15px 15px 15px;
-  border-style: solid;
-  border-color: #d3d3d3;
-  border-width: 1px;
-  text-decoration: none;
-  padding: 10px 10px 10px 10px;
-}
-
-.filter_links li a:active {
-  color: #000000;
-  font-weight: bold;
-  font-size: small;
-  background: #deebff;
+  background: var(--filter-bg-color);
   border-radius: 15px 15px 15px 15px;
   border-style: solid;
   border-color: #d3d3d3;
@@ -259,7 +239,6 @@ input::placeholder {
 .card {
   background-color: white;
   border-radius: 20px;
-  padding: 5px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
   min-width: 165px;
 }
@@ -442,7 +421,7 @@ input::placeholder {
 
 /*10. Footer Start*/
 .footer {
-  background-color: #f2f2f2;
+  background-color: var(--main-bg-color);
   line-height: 2;
 }
 
@@ -481,7 +460,7 @@ a:link {
   }
 
   .accommodation-title {
-     margin-left: -25px;
+    margin-left: -25px;
   }
 
   .accommodation-footer {
@@ -495,25 +474,32 @@ a:link {
 
   .popular-cards {
     display: flex;
-    justify-content: space-around;
   }
 
   .popular-cards .card {
+    margin: 20px;
     width: 200px;
   }
 
   /*9.1 Tablet Activities Cards Start*/
   .activities {
-    width: 100%;
-    padding-left: 20px
-  }
-  
-  .activities-cards .card {
-    display: inline-block;
+    padding: 0px;
   }
 
-  .activities-title {
-    margin-left: -25px;
+  .activities-cards {
+    display: flex;
+    }
+
+  .activities-cards .card {
+    margin-right: 20px;
+  }
+
+   .activities-cards .card-content {
+    height: 30px;
+  }
+  .activities-cards img {
+    width: 100%;
+    max-height: 200px;
   }
 }
 
@@ -548,7 +534,7 @@ a:link {
   }
 
   .nav_links li a:link {
-    color: #f2f2f2;
+    color: var(main-bg-color);
     border-bottom: 3px solid;
     margin-left: -25px;
     margin-right: 0px;
@@ -558,22 +544,15 @@ a:link {
   }
 
   .nav_links li a:hover {
-    color: #0065fc;
+    color: var(--main-color);
     border-top: none;
     border-bottom: 3px solid;
-  }
-
-  .nav_links a:active {
-    color: #0065fc;
-    border-top: none;
-    border-bottom: 3px solid;
-    text-decoration: none;
   }
 
   .nav_links a:visited {
     color: black;
     border-top: none;
-    border-bottom: 3px solid #f2f2f2;
+    border-bottom: 3px solid var(--main-bg-color);
     text-decoration: none;
   }
 
@@ -588,10 +567,10 @@ a:link {
   }
 
   .fa-magnifying-glass {
-    background: #0065fc;
+    background: var(--main-color);
     border: none;
     border-radius: 0px 15px 15px 0px;
-    color: #f2f2f2;
+    color: var(--main-bg-color);
     font-size: 100%;
     outline: None;
     padding: 15px 20px;
@@ -628,19 +607,26 @@ a:link {
   /*6.2 Mobile Accommodation And Popular Cards Start*/
   .accommodation-and-popular {
     flex-flow: column-reverse;
-    width: 100%;
+  }
+
+  .accommodation-and-popular section {
+    border-radius: 0px;
   }
 
   /*7.2 Mobile Accommodation Cards Start*/
   .accommodation {
     width: 100%;
+    background-color: white !important;
+    margin-left: -10px;
+    width: 110%
+
   }
 
   .accommodation-cards .card {
     display: block;
     margin-top: 0px;
-    margin-left: 0px;
-    margin-bottom: 25px;
+     margin-left: -10px;
+         margin-bottom: 10px;
     width: 100%;
   }
 
@@ -651,16 +637,20 @@ a:link {
 
   .accommodation-footer {
     margin-left: -25px;
+    margin-bottom: -40px;
   }
 
   /*8.2 Mobile Popular Cards Start*/
 
   .popular {
-    width: 100%;
+    width: 110%;
+    margin-left: -10px;
   }
 
   .popular-cards .card {
     display: flex;
+    margin-left: -10px;
+    margin-bottom: -10px;
   }
 
   /*9.2 Mobile Activities Cards Start*/
@@ -686,7 +676,7 @@ a:link {
   }
 
   .footer {
-    background-color: #f2f2f2;
+    background-color: var(--main-bg-color);
     line-height: 2;
     width: 110%;
     margin-left: -10px;
