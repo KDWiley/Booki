@@ -15,6 +15,7 @@
 /*7.1 Tablet Accommodation Cards */
 /*8.1 Tablet Popular Cards */
 /*9.1 Tablet Activities Cards */
+/*10.1 Tablet Footer */
 
 /*MOBILE  (min-width: 320px) and (max-width: 767px)  */
 /*1.2 Mobile General */
@@ -487,19 +488,21 @@ a:link {
   }
 
   .activities-cards {
-    display: flex;
-    }
+    padding-left: 20px;
+  }
 
   .activities-cards .card {
-    margin-right: 20px;
+    margin-right: 25px;
   }
 
-   .activities-cards .card-content {
-    height: 30px;
-  }
   .activities-cards img {
     width: 100%;
     max-height: 200px;
+  }
+
+  /*10.1 Tablet Footer */
+  .footer-links {
+    margin-left: 20px;
   }
 }
 
@@ -508,7 +511,7 @@ a:link {
   .main-container {
     width: 100%;
     padding: 10px;
-    margin-right: 0;
+    margin-right: 10px;
   }
 
   .body {
@@ -534,7 +537,7 @@ a:link {
   }
 
   .nav_links li a:link {
-    color: var(main-bg-color);
+    color: var(--main-bg-color);
     border-bottom: 3px solid;
     margin-left: -25px;
     margin-right: 0px;
@@ -618,15 +621,14 @@ a:link {
     width: 100%;
     background-color: white !important;
     margin-left: -10px;
-    width: 110%
-
+    width: 110%;
   }
 
   .accommodation-cards .card {
     display: block;
     margin-top: 0px;
-     margin-left: -10px;
-         margin-bottom: 10px;
+    margin-left: -10px;
+    margin-bottom: 20px;
     width: 100%;
   }
 
@@ -645,19 +647,19 @@ a:link {
   .popular {
     width: 110%;
     margin-left: -10px;
+    margin-bottom: 0px;
   }
 
   .popular-cards .card {
     display: flex;
     margin-left: -10px;
-    margin-bottom: -10px;
   }
 
   /*9.2 Mobile Activities Cards Start*/
 
   .activities {
     width: 90%;
-    padding-left: 8px;
+    padding-left: 20px;
   }
 
   .activities-cards .card {
